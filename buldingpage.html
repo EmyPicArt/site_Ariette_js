@@ -10,19 +10,24 @@
             rel="stylesheet" />
         <!--insertion de la feuille de style-->
         <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Site ariette en JS</title>
     </head>
 
 <body>
     <!--NAVBAR-->
-    <nav>
-        <ul id="menu" class="topnav">
-            <li><a href="#landscape" title="lien vers la page Landscape">Landscapes</a></li>
-            <li><a href="#portraits" title="lien vers la page Portrait">Portraits</a></li>
-            <li><a href="#biography" title="lien vers la page Biographie">Biographie</a></li>
-            <li><a href="buldingPage.html" title="lien vers la page Contact">Contact</a></li>
-        </ul>
+    <nav id="containerNavbar">
+        <div id="menu" >
+            <i id="burger" class="fas fa-bars"></i>
+            <ul id="topnav">
+                <li class="link"><a class="linkMenu" href="#landscape" title="lien vers la page Landscape">Landscapes</a></li>
+                <li class="link"><a class="linkMenu" href="#portraits" title="lien vers la page Portrait">Portraits</a></li>
+                <li class="link"><a class="linkMenu" href="#biography" title="lien vers la page Biographie">Biographie</a></li>
+                <li class="link"><a  class="linkMenu" href="buldingPage.html" title="lien vers la page Contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
+
 
 <!-- 1er div formulaire prénom -->
 <div id="container">

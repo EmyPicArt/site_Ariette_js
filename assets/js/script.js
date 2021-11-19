@@ -28,6 +28,13 @@ buttonMail.addEventListener("click", function(){
     buildingPage.style.display = "none";
 });
 
+// Partie menu burger
+var navbar = document.getElementById("topnav");
+var burger = document.getElementById("burger");
 
+
+burger.addEventListener("click", function(){
+    navbar.classList.toggle
+})
 
 })

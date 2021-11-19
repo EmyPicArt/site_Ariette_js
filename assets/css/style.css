@@ -82,8 +82,8 @@ input{
     width: 100%;
     border-radius: 10px;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1.2rem; */
-}
+    font-size: 1.2rem; }*/
+
 /* ===================== MODAL COOKIES ===================== */
 /* #modal{
     display: flex;
@@ -151,27 +151,27 @@ input{
 }
 .modalButton{
     display: flex;
-} */
-/* ul.topnav {
+}*/
+ul#topnav {
     /* reset du style des listes */
-    /* list-style-type: none;
+    list-style-type: none;
     margin: 0;
-    padding: 0; */
+    padding: 0;
     /* Alignement vertical et horizontal des enfants de ul */
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: space-evenly; */ */
-/* }
-ul.topnav li a{
+    justify-content: space-evenly;  
+}
+ul#topnav li a{
     color: #F6A844;
     text-decoration: none;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
-} */
-/* ul.topnav li a:hover, #burger:hover{
+}
+ul#topnav li a:hover, #burger:hover{
     color: #9C7854;
-} */
+}
 /* #accept, #custom {
     cursor: pointer; 
 }
@@ -322,22 +322,38 @@ img {
     color:#F6A844;
 }
 /* Partie Noémie menu burger====================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
+#burger{
+    display:none ;
+}
 
 @media screen and (max-width:680px){
-    ul.topnav {
+
+
+    #menu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width:100%,  
+    }
+    #burger{
+        display:block;
+    }
+    ul#topnav{
+        width:100%;
+        /* display:none; */
+        flex-direction: column;
+        align-items: flex-end;
+        
+    }
+    ul#topnav li a,i{
+        color: #F6A844;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 1rem;
+    }
+
+}
+/* @media screen and (max-width:680px){ */
+    /* ul.topnav {
         display:none;
     }
     ul.topnav.open{
@@ -356,6 +372,6 @@ img {
     }
     .biography{
         flex-direction: column;
-    }
+    } */
 
-}
+/* } */
