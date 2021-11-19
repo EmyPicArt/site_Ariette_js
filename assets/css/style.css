@@ -152,7 +152,7 @@ input{
 .modalButton{
     display: flex;
 }*/
-ul#topnav {
+ul.topnav {
     /* reset du style des listes */
     list-style-type: none;
     margin: 0;
@@ -162,14 +162,14 @@ ul#topnav {
     align-items: center;
     justify-content: space-evenly;  
 }
-ul#topnav li a{
+ul.topnav li a{
     color: #F6A844;
     text-decoration: none;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
 }
-ul#topnav li a:hover, #burger:hover{
+ul.topnav li a:hover, #burger:hover{
     color: #9C7854;
 }
 /* #accept, #custom {
@@ -338,19 +338,21 @@ img {
     #burger{
         display:block;
     }
-    ul#topnav{
+    ul.topnav{
         width:100%;
-        /* display:none; */
+        display:none;
         flex-direction: column;
         align-items: flex-end;
         
     }
-    ul#topnav li a,i{
+    ul.topnav li a,i{
         color: #F6A844;
         font-family: 'Open Sans Condensed', sans-serif;
         font-size: 1rem;
     }
-
+    .topnav.is-visible{
+        display: block;
+    }
 }
 /* @media screen and (max-width:680px){ */
     /* ul.topnav {

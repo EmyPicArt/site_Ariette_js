@@ -29,12 +29,14 @@ buttonMail.addEventListener("click", function(){
 });
 
 // Partie menu burger
-var navbar = document.getElementById("topnav");
-var burger = document.getElementById("burger");
+const navbar = document.querySelector(".topnav");
+const burger = document.querySelector(".fas");
+
+console.log()
 
 
 burger.addEventListener("click", function(){
-    navbar.classList.toggle
+    navbar.classList.toggle('is-visible')
 })
 
 })
