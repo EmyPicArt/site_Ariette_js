@@ -1,22 +1,31 @@
 $(function(){
 
-// Saisie du prénom
-
-// var hello = $("#hello");
 var hello = document.getElementById("hello");
 var buttonName = document.getElementById("buttonName");
+var form1 = document.getElementById("form1");
+var buildingPage = document.getElementById("buildingPage");
+var name = document.getElementById("name");
 
+
+// Saisie du prénom
 buttonName.addEventListener("click",function(){
-    var name = document.getElementById("name").value;
+    var userName = document.getElementById("name").value;
     form1.style.display = "none";
-    buldingPage.style.display = "block";
-    hello.innerHTML = "Bonjour " + name + ",";
+    buildingPage.style.display = "flex";
+    hello.innerHTML = "Bonjour " + userName + ",";
+    console.log(userName)
 });
 
-var buttonMail = document.getElementById("buttonMail").addEventListener("click", function(){
+// saisie du mail
+
+var buttonMail = document.getElementById("buttonMail");
+
+buttonMail.addEventListener("click", function(){
     var inputMail = document.getElementById("inputMail").value;
-    var name = document.getElementById("name").value;
-    alert("Merci " + name + " ! Nous te confirmons que tu seras informé(e) sur ton email : " + inputMail +" dès que le site sera terminé ! ")
+    var userName = document.getElementById("name").value;
+    alert("Merci " + userName + " ! Nous te confirmons que tu seras informé(e) sur ton email : " + inputMail +" dès que le site sera terminé ! ");
+    hello.innerHTML = "Merci " + userName + " et à bientôt !";
+    buildingPage.style.display = "none";
 });
 
 

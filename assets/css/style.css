@@ -23,7 +23,7 @@ nav{
 /* ===================== SCROLL TOP ===================== */
 
 /* ===================== PAGE DE CONSTRUCTION ===================== */
-#subscribeImg, #nav{
+/* #subscribeImg, #nav{
     display: none;
 }
 #start {
@@ -82,10 +82,10 @@ input{
     width: 100%;
     border-radius: 10px;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.2rem; */
 }
 /* ===================== MODAL COOKIES ===================== */
-#modal{
+/* #modal{
     display: flex;
 
 }
@@ -99,7 +99,7 @@ input{
     width: 30%;
     position: fixed;
     z-index: 1;
-    /* position de la fenetre au centre de l'écran */
+    position de la fenetre au centre de l'écran
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -113,8 +113,8 @@ input{
     width: 100%;
     position: fixed;
     bottom: 0;
-    box-shadow: 0px 1px 12px #555;
-}
+    box-shadow: 0px 1px 12px #555; */
+/* }
 .cookiesButton{
     cursor: pointer;
     display: flex;
@@ -127,9 +127,9 @@ input{
 }
 .cookiesButton{
     background-color:#ffffff;
-}
+} */
 
-.cookiesButton p{    
+/* .cookiesButton p{    
     margin: 0;
 }
 #customContentAccept, #addContentAccept, #publicContentAccept, #customContentReject, #addContentReject, #publicContentReject{
@@ -151,28 +151,28 @@ input{
 }
 .modalButton{
     display: flex;
-}
-ul.topnav {
+} */
+/* ul.topnav {
     /* reset du style des listes */
-    list-style-type: none;
+    /* list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0; */
     /* Alignement vertical et horizontal des enfants de ul */
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-evenly;
-}
+    justify-content: space-evenly; */ */
+/* }
 ul.topnav li a{
     color: #F6A844;
     text-decoration: none;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
-}
-ul.topnav li a:hover, #burger:hover{
+} */
+/* ul.topnav li a:hover, #burger:hover{
     color: #9C7854;
-}
-#accept, #custom {
+} */
+/* #accept, #custom {
     cursor: pointer; 
 }
 #burger{
@@ -181,17 +181,17 @@ ul.topnav li a:hover, #burger:hover{
     color: #F6A844;
     font-size: 1.5rem;
     font-weight: 700;
-}
-#closeModal {
+} */
+/* #closeModal {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-}
-#closeModal:hover {
+} */
+/* #closeModal:hover {
   color: black;
   cursor: pointer;
-}
+} */
 #imgLandscapes, #imgPortraits{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -283,10 +283,58 @@ img {
 /* ====================================================================================== */
 /* La partie TP by Noémie */
 /* ===================================================================================== */
-
-#buldingPage{
-    display: none;
+#container{
+    width: 100%;
 }
+#form1{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#formName{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#form2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#hello, #formMail{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#buildingPage{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#F6A844;
+}
+/* Partie Noémie menu burger====================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:680px){
     ul.topnav {

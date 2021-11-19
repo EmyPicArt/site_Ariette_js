@@ -25,27 +25,30 @@
     </nav>
 
 <!-- 1er div formulaire prénom -->
+<div id="container">
     <div id="form1">
-        <form action="">
+        <form id="formName" action="">
             <label for="name">Quel est ton prénom ?</label>
             <input id="name" type="text">
-            <input id="buttonName" type="submit" value="Envoyer">
+            <input id="buttonName" type="button" value="Envoyer">
+            <!-- Attention mettre un input type button -->
         </form>
     </div>
     <!-- <button id="buttonSubmit">Envoyer</button> -->
 <!-- 2eme div msg site construction , hello -->
-    
-    <div id="hello"></div>
-    <div id="buldingPage">
-        <p>Le site n’est pas tout à fait terminé ! Pour être informé de son ouverture officiellement n’hésites pas à laisser ton mail.</p>
-        <!-- Formulaire de demande de mail -->
-        <form action="">
-            <label for="email">Entre ton email</label>
-            <input id="inputMail" type="mail">
-            <input id="buttonMail" type="submit" value="Envoyer">
-        </form>
+    <div id="form2">
+        <div id="hello"></div>
+        <div id="buildingPage">
+            <p>Le site n’est pas tout à fait terminé ! Pour être informé de son ouverture officiellement n’hésites pas à laisser ton mail.</p>
+            <!-- Formulaire de demande de mail -->
+            <form id="formMail" action="">
+                <label for="email">Entre ton email</label>
+                <input id="inputMail" type="mail">
+                <input id="buttonMail" type="button" value="Envoyer">
+            </form>
+        </div>
     </div>
-
+</div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
